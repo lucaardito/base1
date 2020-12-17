@@ -44,11 +44,7 @@ public class HomeController {
         persone.add(mapFromData("4353AA", "Marco Neri", "14000", "cassa integrazione"));
 
         model.addAttribute("nome", name);
-        if (cognome == null) {
-            cognome = " ";
-        }
         model.addAttribute("cognome", cognome);
-
         model.addAttribute("headers", headers);
         model.addAttribute("righe", persone);
 
