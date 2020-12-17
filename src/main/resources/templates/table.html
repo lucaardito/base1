@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head><title>Test Tabella</title></head>
+<body>
+
+<h1>ELENCO DIPENDENTI</h1>
+<p th:text="'Buongiorno '+${nome} + ' ' + ${cognome}?: ' '"></p>
+<table>
+    <thead>
+        <th th:each="header: ${headers}" th:text="${header}"/>
+    </thead>
+    <tbody>
+        <tr th:each="riga: ${righe}">
+            <td th:each="header: ${headers}" th:text="${riga.get(header)}"></td>
+        </tr>
+    </tbody>
+
+
+
+</table>
+
+</body>
+</html>

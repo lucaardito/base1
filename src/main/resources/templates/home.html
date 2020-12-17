@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head><title>Test spring</title></head>
+<body>
+<h1>CIAO</h1>
+<p th:text="${now}"></p>
+
+<form action="/testform" method="post">
+    <label for ="a">a:</label>
+    <input type="text" id="a" name="a"><br/><br/>
+    <label for ="b">b:</label>
+    <input type="text" id="b" name="b"><br/><br/>
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
